@@ -1,0 +1,27 @@
+<view class="container" bind:tap="onTapCourseCard">
+  <view class="time-container">
+    <text class="time">18:45-19:45</text>
+  </view>
+  <view class="course-container">
+    <image class="coach-avatar" src="/images/avatar/avatar-5.png" background-size="cover"></image>
+    <view class="course">
+      <view class="course-info">
+        <view class="course-desc">
+          <!-- <text class="title" decode="{{true}}">Untra Burn TM 全面燃脂派对</text>
+            <text class="category">K3 · 全身 · 燃脂 · 体能训练</text> -->
+          <text class="title" decode="{{true}}">Untra Burn ™ 全面燃脂派对</text>
+          <text class="category">K3 · 全身 · 燃脂 · 体能训练</text>
+          <view class="price-container">
+            <text class="price">¥79</text>
+            <text class="promotion">买2免1</text>
+          </view>
+        </view>
+        <text class="course-status">马上预约</text>
+      </view>
+      <view class="profile">
+        <text class="tag">合作</text>
+        <text class="desc">动能联盟合作课程</text>
+      </view>
+    </view>
+  </view>
+</view>

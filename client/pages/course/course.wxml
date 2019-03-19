@@ -1,0 +1,15 @@
+<view class="container" bind:="onTouchEnd">
+  <top-swiper-cmp class="top-swiper" imgUrls="{{imgUrls}}"></top-swiper-cmp>
+  <course-list-cmp class="course-list" fixedtop="{{menuFixed}}">
+    <view class="course-list-header" slot="top">
+      <view class="area">
+        <image class="city-icon" src="/images/icon/city.png" />
+        <text class="store-area right-arrow">上海全部门店</text>
+      </view>
+      <view class="filter">
+        <image class="filter-icon" src="/images/icon/filter.png" />
+        <text class="course">课程</text>
+      </view>
+    </view>
+  </course-list-cmp>
+</view>

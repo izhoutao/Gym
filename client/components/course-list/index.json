@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "course-cmp": "/components/course-card/index"
+  }
+}

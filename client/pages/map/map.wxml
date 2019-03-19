@@ -1,0 +1,5 @@
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{false}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location>
+  <cover-view class="homing" bindtap="controltap">
+    <cover-image class="img" src="/images/icon/homing.png" />
+  </cover-view>
+</map>

@@ -1,0 +1,183 @@
+/* components/paypage/index.wxss */
+/* .container{
+  width: 100%;
+  bottom: 0rpx;
+} */
+
+.wx-mask{
+  position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.wx-dialog{
+  /* height: 50%; */
+position:fixed;
+z-index:5000;
+width:100%;
+bottom: 0rpx;
+background-color:#FFFFFF;
+text-align:center;
+border-radius:3px;
+overflow:hidden;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+}
+.title text{
+  font-size: 18px;
+  padding: 15px 15px 5px;
+  position: absolute;
+}
+.wx-dialog-title{
+    font-size: 18px;
+    padding: 15px 15px 5px;
+    margin: 0 auto;
+}
+.wx-dialog-content{
+    padding: 15px 15px 5px;
+    min-height: 40px;
+    font-size: 16px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #999999;
+}
+.wx-dialog-footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 50px;
+    font-size: 18px;
+}
+.wx-dialog-footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.wx-dialog-btn{
+    display: block;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: relative;
+    background-color: #3CC51F;
+    color: white;
+}
+
+.wx-dialog-btn-no{
+    display: block;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: relative;
+    background-color: #ccc;
+    color: white;
+}
+/* .wx-dialog-footer .wx-dialog-btn:nth-of-type(1){
+    background-color: #3CC51F;
+    color: white;
+}
+.wx-dialog-footer .wx-dialog-btn:nth-of-type(2){
+    color: #3CC51F;
+} */
+.wx-dialog-footer .wx-dialog-btn:nth-of-type(2):after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+
+.btline100{
+  border-top: 1px solid #dfdfdf80;
+  width: 100%;
+}
+
+.ordernum{
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx;
+}
+.ordernum text{
+  font-size: 26rpx;
+  margin: auto 20rpx;
+}
+
+.ordernum-style{
+  width: 110rpx;
+  color: #3CC51F;
+  font-weight: bold;
+  background-color: rgb(214, 245, 215);
+  border: 1px solid #3CC51F;
+  border-radius: 55rpx;
+  line-height: 50rpx;
+  
+  /* opacity: 0.2; */
+
+}
+
+.agree{
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  color: #aaa;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.agree text{
+  font-size: 24rpx;
+  color: #aaa;
+  margin: auto 0;
+}
+
+.link{
+  border-bottom: 1px solid #aaa;
+}
+
+/* 单选钮样式 */
+radio {
+  transform:scale(0.6);
+
+}
+.payway{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 0;
+}
+
+.paycash{
+  display: flex;
+ background-color: rgb(214, 245, 215);
+  height: 140rpx;
+  border: 1px solid #3CC51F;
+  flex-direction: row;
+  margin: 20rpx;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.paycash text{
+  margin: auto 40rpx;
+  font-size: 28rpx;
+}

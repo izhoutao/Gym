@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "top-swiper-cmp": "/components/top-swiper/index",
+    "course-list-cmp": "/components/course-list/index"
+  }
+}

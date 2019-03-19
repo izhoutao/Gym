@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/my/my",
+    "pages/addCgi/addCgi",
+    "pages/course/course",
+    "pages/timegift/timegift",
+    "pages/test/test",
+    "pages/course-detail/course-detail",
+    "pages/coach/coach",
+    "pages/store/store",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "动能联盟",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [{
+        "pagePath": "pages/course/course",
+        "selectedIconPath": "/images/tab/course@highlight.png",
+        "iconPath": "/images/tab/course.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/timegift/timegift",
+        "selectedIconPath": "/images/tab/timegift@highlight.png",
+        "iconPath": "/images/tab/timegift.png",
+        "text": "时间的礼物"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "selectedIconPath": "/images/tab/my@highlight.png",
+        "iconPath": "/images/tab/my.png",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "images/icon/mine.png",
+        "selectedIconPath": "images/icon/mine1.png"
+      }
+    ]
+  }
+}

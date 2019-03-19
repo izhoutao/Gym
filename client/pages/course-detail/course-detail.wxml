@@ -1,0 +1,65 @@
+<!-- pages/test/course-detail/course-detail.wxml -->
+<view class='contanier'>
+  <top-swiper-cmp class="top-swiper" imgUrls="{{imgUrls}}"></top-swiper-cmp>
+  <view class='course-info'>
+    <view class='course-name'>
+      <view>Core Master ™</view>
+      <view>极致腹肌雕刻</view>
+    </view>
+    <text>3月13日（明天） 11:00-12:00</text>
+    <text>累计预约7060人</text>
+  </view>
+  <view class='btline'></view>
+  <view class='divider'></view>
+  <v-teacher></v-teacher>
+  <view class='course'>
+    <view class='divider'></view>
+    <view class='course-intro'>
+      <text>课程说明</text>
+      <text class='course-intro-text'>
+        燃脂375千卡 时间59分钟
+聚焦腰腹肌肉线条刻画，能让你获得紧致腰部线条的课程~动作设计中照顾到上肢的脆弱，在仰卧、俯卧的交替动作中，深度激活并塑造你的核心肌群
+      </text>
+      <view class='btline100'></view>
+      <text class='course-intro-title'>适用人群</text>
+      <text class='course-intro-text'>
+        有腰腹线条需求的 Keeper,不论你是久坐不动的办公室白领，还是渴望腹肌，想要提高运动表现的人土，它都是你的不二选择
+      </text>
+      <text class='course-intro-title'>训练效果</text>
+      <text class='course-intro-text'>
+        燃脂参考:380-450Kcal
+              塑形指数: KKKKK
+              彩蛋福利:缓解久坐引起的腰背疲劳，雕琢手臂肌肉线条
+      </text>
+      <view class='btline100'></view>
+      <text class='course-intro-title'>特别说明</text>
+      <text class='course-intro-text'>
+        1、患有脊柱病理问题，骨科伤病且尚未痊(尤其腰椎间盘突出患者)、生理期的女性不建议参加此课程。
+            2、患有代谢类疾病、心脑血管疾病，以及处于妊娠、哺乳期的 Keeper.请医嘱诜柽是否参加课程。
+            3、训练过程中会伴有气喘或局部或全身性的肌肉酸痛，这情况均属于正常现象。如果出现严重的头晕、胸闷、身体异常疼痛等不适感，请停止训练。
+      </text>
+    </view>
+    <view>
+      <view class='divider'></view>
+      <view class='course-intro'>
+        <text class='course-intro-title'>训练流程</text>
+        <text class='course-intro-text'>每个动作重复1次，所有动作循环3遍</text>
+      </view>
+      <view class='divider'></view>
+      <view class='course-intro'>
+        <text class='course-intro-title'>购买须知</text>
+        <text class='course-intro-text'>
+          请在课程开始前30分钟完成签到本店免费提供直饮水，如有需要请自带水杯距离课程开始4小时内不支持取消预约;多人入场券仅支持购买者操作取消预约，取消后该订单内所有入场券均失效使用新人券的课程无法转课，其余课程在结束前都支持转课给朋友，课程被好友领取后，将不支持取消预约。
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class='buy'>
+    <text class='price center'>¥79</text>
+    <text class='order center' bindtap='showDialog'>预 约</text>
+  </view>
+  <view class='blank130'></view>
+  <view class="container">
+    <v-paypage id='dialog' confirmText='198' bind:cancelEvent="_cancelEvent" bind:disclaimer='disclaimer' bind:convention='convention' bind:confirmEvent="_confirmEvent"></v-paypage>
+  </view>
+</view>

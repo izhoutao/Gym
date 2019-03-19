@@ -1,0 +1,11 @@
+<!-- pages/welcome/welcome.wxml -->
+<!-- <text>pages/welcome/welcome.wxml</text> -->
+<view class='container' bindtap='toIndexDetail'>
+  <image class='avatar' src='/images/avatar/avatar-1.png'></image>
+  <text class='motto'>Hello,欢迎来到动能联盟</text>
+  <view catchtap='onTapJump' class='journey-container'>
+    <text class='journey'>开启改变自我之旅</text>
+  </view>
+  <!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">dianwo </button> -->
+  <text class='time'>{{time}}s</text>
+</view>

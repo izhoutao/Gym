@@ -1,0 +1,161 @@
+/* components/course-list/index.wxss */
+/* @import "/style/weui.wxss"; */
+.container {
+  /* display: relative; */
+  background: #FFF;
+}
+
+.header {
+  width: 100%;
+  /* box-shadow: rgb(233, 233, 233) 0px 0px 10px 0px; */
+  box-shadow: 0px 11px 11px -11px #f0f0f0;
+  /* position: absolute; */
+}
+
+.stickyClass {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+
+/* .fixed {
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+  top: 0;
+} */
+
+.calendar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.weekdate {
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+  color: rgb(200, 200, 200);
+}
+
+.currentdate {
+  color: #32c8a0;
+}
+
+.weekday-container {
+  font-size: 14px;
+  line-height: 14px;
+  height: 14px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: block; */
+  /* padding: 5px; */
+}
+
+.weekday {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectday {
+  color: white;
+  background-color: #32c8a0;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+.course-list {
+  width: 100%;
+  height: auto;
+  /* position: relative; */
+}
+
+.courses-swiper-item {
+  height: auto !important;
+}
+
+.courses-container {
+  padding: 0px 10px;
+}
+
+.store {
+  position: relative;
+  padding: 20px 20px 20px 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.store::before {
+  display: inline-block;
+  content: ' ';
+  height: 14px;
+  width: 0px;
+  border-left: 3px solid #32c8a0;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -7px;
+}
+
+.store-name {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+}
+
+.store-location {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgb(200, 200, 200);
+  vertical-align: middle;
+}
+
+.right-arrow {
+  position: relative;
+}
+
+.right-arrow::after {
+  display: inline-block;
+  content: ' ';
+  height: 8px;
+  width: 8px;
+  border-width: 2px 2px 0 0;
+  border-color: #c7c7cc;
+  border-style: solid;
+  transform: rotate(45deg);
+
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  margin-top: -4px;
+}
+
+
+.course {
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+.hideStore {
+  border: none;
+}

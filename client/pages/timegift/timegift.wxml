@@ -1,0 +1,4 @@
+<view class="container">
+  <top-swiper-cmp class="top-swiper" interval="5000" duration="1000"></top-swiper-cmp>
+  <course-list-cmp class="course-list"></course-list-cmp>
+</view>

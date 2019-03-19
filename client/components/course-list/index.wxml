@@ -1,0 +1,40 @@
+<view class="container">
+  <!-- <view class="header {{fixedtop?'fixed':''}}"> -->
+  <view class="header stickyClass">
+    <slot name="top"></slot>
+    <view class="calendar">
+      <view wx:for="{{weekdays}}" wx:key="*this" class="day">
+        <text class="weekdate {{index===0?'currentdate':''}}">{{weekdates[index]}}</text>
+        <view class="weekday-container" bind:tap="tapWeekday" data-index="{{index}}">
+          <text class="weekday {{index===currentTab?'selectday':''}}">{{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <swiper class="course-list" current="{{currentTab}}" bindchange="swiperChange" style="height:{{swiperHeight}}px;top:{{swiperTop}}px;">
+    <block wx:for="{{weekdays}}" wx:key="*this">
+      <swiper-item class="courses-swiper-item">
+        <view class="courses-container">
+          <navigator url="/pages/store/store" hover-class="navigator-hover">
+            <view hidden="{{hideStore}}" class="store right-arrow">
+              <text class='store-name'>静安大悦城店</text>
+              <text class='store-location'>查看位置</text>
+            </view>
+          </navigator>
+          <block wx:if="{{true}}">
+            <view class="course {{(hideStore&&index===0)?'hideStore':''}}" wx:for="{{[1,2,3,4,5]}}" wx:key="*this">
+              <course-cmp></course-cmp>
+            </view>
+          </block>
+          <block wx:else>
+            <image class="empty" src="/images/icon/empty.png" />
+          </block>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- <view class="weui-loadmore" hidden="{{is_loadmore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view> -->
+</view>

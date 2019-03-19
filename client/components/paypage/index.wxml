@@ -1,0 +1,38 @@
+<!--components/paypage/index.wxml-->
+<view class='container' hidden="{{!isShow}}">
+  <view class='wx-mask'></view>
+  <view class='wx-dialog'>
+  <view class='title'>
+    <text class='' catchtap='_cancelEvent'>X</text>
+    <view class='wx-dialog-title'>{{ title }}</view>
+  </view>
+    
+    <view class='btline100'></view>
+    <view class='ordernum'>
+      <text>预约人数</text>
+      <text class='ordernum-style'>1人</text>
+      <text class='ordernum-style'>2人</text>
+    </view>
+    <view class='btline100'></view>
+    <view class='payway'>
+      <text>支付方式</text>
+      <view class='paycash'>
+        <text class=''>现金支付</text>
+        <text>¥{{confirmText}}/次</text>
+      </view>
+      
+      <view class='agree'>
+        <radio catchtap='onagree' checked = '{{checked}}'></radio>
+        <text>我已阅读并同意动能联盟</text>
+        <text class='link' catchtap='disclaimer'>免责声明</text>
+        <text>及</text> 
+        <text class='link' bindtap='convention'>用户公约</text>
+      
+      </view>
+    </view>
+    <view class='wx-dialog-footer'>
+      
+      <view class="{{checked ? 'wx-dialog-btn' : 'wx-dialog-btn-no'}}" catchtap='_confirmEvent'>确定支付 ¥{{ confirmText }}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!-- <view class="container">
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="{{true}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" bind:tap="onTap"/> 
+        <img-btn-cmp class="advertise-link" image-src="{{item}}" bind:tapimage="onTapImage"></img-btn-cmp>
+      </swiper-item>
+    </block>
+  </swiper>
+</view> -->
+<view class="container">
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="{{true}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" bind:tap="onTapImage" mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

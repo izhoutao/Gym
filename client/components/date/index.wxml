@@ -1,0 +1,15 @@
+<!--components/date/index.wxml-->
+<view class='contanier'>
+  <view class="fixarea {{menuFixed ? 'fixed': ''}}" id='fix'>
+    <view class="swiper-tab">
+      <block wx:for='{{week}}' wx:index='index'>
+        <view class="tab-item {{currentTab==index ? 'on' : ''}}" data-current="{{index}}" bindtap="swichNav">{{item}}</view>
+      </block>
+    </view>
+    <view class="swiper-tab">
+      <block wx:for='{{weekdate}}' wx:index='index'>
+        <view class="tab-item {{currentTab==index ? 'bg' : ''}}" data-current="{{index}}" bindtap="swichNav">{{item}}</view>
+      </block>
+    </view>
+  </view>
+</view>

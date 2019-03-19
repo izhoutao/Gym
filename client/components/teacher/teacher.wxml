@@ -1,0 +1,12 @@
+<!--components/teacher/teacher.wxml-->
+<view class='container'>
+  <image class='turl' src='{{tUrl}}'></image>
+  <view class='profile'>
+    <view class='profile-name'>
+      <text class='tname'>{{tName}}</text>
+      <image class='tv' src='{{tV}}'></image>
+    </view>
+    
+    <text class='tinfo'>{{tInfo}}</text>
+  </view>
+</view>

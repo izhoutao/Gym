@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "top-swiper-cmp": "/components/top-swiper/index",
+    "v-date": "/components/date/index",
+    "v-teacher": "/components/teacher/teacher",
+    "v-paypage": "/components/paypage/index"
+  }
+}

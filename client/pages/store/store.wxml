@@ -1,0 +1,37 @@
+<view class="container">
+  <top-swiper-cmp class="top-swiper" imgUrls="{{imgUrls}}"></top-swiper-cmp>
+  <view class="store-info">
+    <view class="store-profile">
+      <view class="store-name">{{'静安大悦城店'}}</view>
+      <view class="store-rank-container">
+        <rate-cmp class="store-rank" value="4.5"></rate-cmp>
+        <text class="rank-number">{{'4.5分'}}</text>
+        <text class="store-tag">新店</text>
+      </view>
+    </view>
+    <view class="store-contact">
+      <view class="location">
+        <image class="location-icon" src="/images/icon/location.png" />
+        <view class="address" bind:tap="onTapAddressLink">{{'上海市静安区西藏北路166号大悦城南座5层507-508'}}</view>
+      </view>
+      <image class="phone-icon" bind:tap="onTapPhoneLink" src="/images/icon/phone.png" />
+    </view>
+    <view class="store-guidance right-arrow">
+      <image class="route-icon" src="/images/icon/route.png" />
+      <text>线路指引</text>
+    </view>
+  </view>
+  <view class="store-facilities">
+    <view class="facilities-header right-arrow" bind:tap="onTapFacilitiesLink">
+      <text class='title'>服务设施</text>
+      <text class='more'>查看更多</text>
+    </view>
+    <view class="facilities-list">
+      <view wx:for="{{[1,2,3,4,5]}}" wx:key="*this" class="facility">
+        <image class="facilitiy-icon" src="/images/icon/airconditioner.png" />
+        <text class="facilitiy-name">{{"冷暖空调"}}</text>
+      </view>
+    </view>
+  </view>
+  <course-list-cmp class="course-list" hideStore="true"></course-list-cmp>
+</view>
